@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "920511679074",
+    "firebase_url": "https://hemoglobin-a0825.firebaseio.com",
+    "project_id": "hemoglobin-a0825",
+    "storage_bucket": "hemoglobin-a0825.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:920511679074:android:86542208f1267af6",
+        "android_client_info": {
+          "package_name": "com.hemoglobin.hemoglobin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "920511679074-307qr9d7v6k8n59690kla41h5ef5579q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hemoglobin.hemoglobin",
+            "certificate_hash": "7fba22248f2ebd7d929fde93b9b567af355325d7"
+          }
+        },
+        {
+          "client_id": "920511679074-i30vb3gd0qr1gjet59ubc71cvmi991us.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBb2hQTY7zLQix628o7PQOdmJ7vp-LK9c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "920511679074-i30vb3gd0qr1gjet59ubc71cvmi991us.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

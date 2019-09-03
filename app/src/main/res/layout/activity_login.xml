@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="56dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <ImageView android:src="@drawable/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="72dp"
+                android:id="@+id/login_icon"
+                android:layout_marginBottom="24dp"
+                android:layout_gravity="center_horizontal" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/login_email_text">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:id="@+id/login_email_address"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/login_password_text">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:id="@+id/login_password"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorPrimary"
+                android:layout_marginBottom="24dp"
+                android:text="Login"/>
+
+            <TextView android:id="@+id/login_register_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_semibold"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/colorBlack"
+                android:text="No Account Yet? Create New One"
+                android:gravity="center"
+                android:textSize="16dip"/>
+
+            <TextView android:id="@+id/login_forgot_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_semibold"
+                android:layout_marginBottom="24dp"
+                android:textColor="@color/colorBlack"
+                android:text="Forgot Password"
+                android:gravity="center"
+                android:textSize="16dip"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

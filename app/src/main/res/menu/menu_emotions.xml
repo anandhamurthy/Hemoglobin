@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_one"
+        android:title="Happy"/>
+    <item
+        android:id="@+id/action_two"
+        android:title="Angry"/>
+    <item
+        android:id="@+id/action_three"
+        android:title="In Love"/>
+    <item
+        android:id="@+id/action_four"
+        android:title="Excited"/>
+    <item
+        android:id="@+id/action_five"
+        android:title="Sad"/>
+    <item
+        android:id="@+id/action_six"
+        android:title="Fear"/>
+    <item
+        android:id="@+id/action_seven"
+        android:title="Sleepy"/>
+    <item
+        android:id="@+id/action_eight"
+        android:title="Ill"/>
+    <item
+        android:id="@+id/action_nine"
+        android:title="Cry"/>
+    <item
+        android:id="@+id/action_ten"
+        android:title="Foody"/>
+
+
+
+</menu>

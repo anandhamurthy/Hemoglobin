@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white">
+
+            <TextView
+                android:id="@+id/profile_edit_ka_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Kidney Alignments"
+                android:textColor="@color/colorAccent"
+                android:textSize="20dp" />
+            <GridLayout
+                android:id="@+id/profile_edit_ka"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_edit_ka_text"
+                android:layout_margin="5dp" >
+
+                <RadioGroup
+                    android:id="@+id/ka"
+                    android:layout_margin="2dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/profile_edit_ka_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:layout_margin="2dp"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20dp"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/profile_edit_ka_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="No"
+                        android:layout_margin="2dp"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20dp"/>
+                </RadioGroup>
+            </GridLayout>
+
+            <TextView
+                android:id="@+id/profile_edit_dia_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_edit_ka"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Are you a diabetics ?"
+                android:textColor="@color/colorAccent"
+                android:textSize="20dp" />
+            <GridLayout
+                android:id="@+id/profile_edit_dia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_edit_dia_text"
+                android:layout_margin="5dp" >
+
+                <RadioGroup
+                    android:id="@+id/dia"
+                    android:layout_margin="2dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/profile_edit_dia_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:layout_margin="2dp"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20dp"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/profile_edit_dia_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="No"
+                        android:layout_margin="2dp"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20dp"/>
+                </RadioGroup>
+            </GridLayout>
+
+            <TextView
+                android:id="@+id/profile_edit_ep_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_edit_dia"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Epilepsy"
+                android:textColor="@color/colorAccent"
+                android:textSize="20dp" />
+            <GridLayout
+                android:id="@+id/profile_edit_ep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_edit_ep_text"
+                android:layout_margin="5dp" >
+
+                <RadioGroup
+                    android:id="@+id/ep"
+                    android:layout_margin="2dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/profile_edit_ep_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:layout_margin="2dp"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20dp"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/profile_edit_ep_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="No"
+                        android:layout_margin="2dp"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20dp"/>
+                </RadioGroup>
+            </GridLayout>
+            <!--<TextView-->
+                <!--android:id="@+id/profile_edit_np_text"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/profile_edit_ep"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:fontFamily="@font/nunito_semibold"-->
+                <!--android:text="Recent Needle Stick Injury"-->
+                <!--android:textColor="@color/colorAccent"-->
+                <!--android:textSize="20dp" />-->
+            <!--<GridLayout-->
+                <!--android:id="@+id/profile_edit_np"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/profile_edit_np_text"-->
+                <!--android:layout_margin="5dp" >-->
+
+                <!--<RadioGroup-->
+                    <!--android:id="@+id/np"-->
+                    <!--android:layout_margin="2dp"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal" >-->
+
+                    <!--<RadioButton-->
+                        <!--android:id="@+id/profile_edit_np_yes"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:checked="false"-->
+                        <!--android:layout_margin="2dp"-->
+                        <!--android:fontFamily="@font/nunito_semibold"-->
+                        <!--android:textColor="@color/colorAccent"-->
+                        <!--android:textSize="20dp"-->
+                        <!--android:text="Yes" />-->
+
+                    <!--<RadioButton-->
+                        <!--android:id="@+id/profile_edit_np_no"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:checked="true"-->
+                        <!--android:text="No"-->
+                        <!--android:layout_margin="2dp"-->
+                        <!--android:fontFamily="@font/nunito_semibold"-->
+                        <!--android:textColor="@color/colorAccent"-->
+                        <!--android:textSize="20dp"/>-->
+                <!--</RadioGroup>-->
+            <!--</GridLayout>-->
+
+            <TextView
+                android:id="@+id/profile_edit_tatt_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_edit_ep"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Have you put any tattoo ?"
+                android:textColor="@color/colorAccent"
+                android:textSize="20dp" />
+
+            <GridLayout
+                android:id="@+id/tatt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_edit_tatt_text"
+                android:layout_margin="5dp">
+
+                <RadioGroup
+                    android:id="@+id/profile_edit_tatt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/profile_edit_tatt_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:checked="false"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:text="Yes"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/profile_edit_tatt_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:checked="true"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:text="No"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20dp" />
+                </RadioGroup>
+            </GridLayout>
+
+            <TextView
+                android:id="@+id/profile_edit_tm_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tatt"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Typhoid / Malaria in past 1 year ?"
+                android:textColor="@color/colorAccent"
+                android:textSize="20dp" />
+
+            <GridLayout
+                android:id="@+id/tm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_edit_tm_text"
+                android:layout_margin="5dp">
+
+                <RadioGroup
+                    android:id="@+id/profile_edit_tm"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/profile_edit_tm_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:checked="false"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:text="Yes"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/profile_edit_tm_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:checked="true"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:text="No"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20dp" />
+                </RadioGroup>
+            </GridLayout>
+
+            <TextView
+                android:id="@+id/profile_edit_jan_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tm"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Have you had Jaundice in past 1 year ?"
+                android:textColor="@color/colorAccent"
+                android:textSize="20dp" />
+
+            <GridLayout
+                android:id="@+id/jan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_edit_jan_text"
+                android:layout_margin="5dp">
+
+                <RadioGroup
+                    android:id="@+id/profile_edit_jan"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/profile_edit_jan_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:checked="false"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:text="Yes"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/profile_edit_jan_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:checked="true"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:text="No"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20dp" />
+                </RadioGroup>
+            </GridLayout>
+
+            <TextView
+                android:id="@+id/profile_edit_bbp_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/jan"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Have you had any blood / blood product Transfusion in last 1 year ?"
+                android:textColor="@color/colorAccent"
+                android:textSize="20dp" />
+
+            <GridLayout
+                android:id="@+id/bbp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_edit_bbp_text"
+                android:layout_margin="5dp">
+
+                <RadioGroup
+                    android:id="@+id/profile_edit_bbp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/profile_edit_bbp_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:checked="false"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:text="Yes"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/profile_edit_bbp_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:checked="true"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:text="No"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20dp" />
+                </RadioGroup>
+            </GridLayout>
+
+            <TextView
+                android:id="@+id/profile_edit_lady_perio_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bbp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Are you under going periods ? (Female)"
+                android:textColor="@color/colorAccent"
+                android:textSize="20dp" />
+
+            <GridLayout
+                android:id="@+id/lp_la"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_edit_lady_perio_text"
+                android:layout_margin="5dp">
+
+                <RadioGroup
+                    android:id="@+id/lp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/profile_edit_lp_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:checked="false"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:text="Yes"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/profile_edit_lp_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:checked="true"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:text="No"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20dp" />
+                </RadioGroup>
+            </GridLayout>
+
+            <TextView
+                android:id="@+id/profile_edit_lady_abb_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lp_la"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Have you recently aborted ? (Female)"
+                android:textColor="@color/colorAccent"
+                android:textSize="20dp" />
+
+            <GridLayout
+                android:id="@+id/lab_la"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_edit_lady_abb_text"
+                android:layout_margin="5dp">
+
+                <RadioGroup
+                    android:id="@+id/lab"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/profile_edit_lab_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:checked="false"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:text="Yes"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/profile_edit_lab_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:checked="true"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:text="No"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20dp" />
+                </RadioGroup>
+            </GridLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/profile_edit_other_diseases_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="28dp"
+            android:src="@drawable/register"
+            app:borderWidth="0dp"
+            app:elevation="6dp"
+            app:pressedTranslationZ="12dp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/profile"
+        android:title="Profile" />
+    <item
+        android:id="@+id/update"
+        android:icon="@drawable/update"
+        android:title="Update" />
+    <item
+        android:id="@+id/setting"
+        android:icon="@drawable/settings"
+        android:title="Settings" />
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/share"
+        android:title="Share" />
+    <item
+        android:id="@+id/build"
+        android:icon="@drawable/version"
+        android:title="Version 1.0" />
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/logout"
+        android:title="Logout" />
+
+
+
+</menu>
